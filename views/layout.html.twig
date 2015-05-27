@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block title %}<title>ZOOlanders</title>{% endblock %}
+
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- style assets -->
+        <link href="{{ path('home') }}assets/vendor/uikit/css/uikit.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="tm-navbar uk-navbar uk-navbar-attached">
+            <div class="uk-container uk-container-center">
+
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li><a href="{{ url('home') }}">Home</a></li>
+                    <li><a href="{{ url('extensions') }}">Extensions</a></li>
+                    <li><a href="{{ url('subscriptions') }}">User Subscriptions</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="uk-margin-top">
+
+        {% block content %}{% endblock %}
+
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{{ path('home') }}assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="{{ path('home') }}assets/vendor/uikit/js/uikit.min.js"></script>
+    </body>
+</html>
+

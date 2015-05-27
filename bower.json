@@ -1,0 +1,8 @@
+{
+    "name": "zoolanders/site",
+    "dependencies": {
+      "jquery": ">= 2.1.0",
+      "uikit": ">= 2.20.0"
+    },
+    "private":true
+}
